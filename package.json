@@ -2,7 +2,7 @@
   "name": "vuex-example",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "souko2525 <yusuke.h0808@gmail.com>",
+  "author": "souko2525 <souko2525@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
