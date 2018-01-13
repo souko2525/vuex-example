@@ -1,5 +1,4 @@
 'use strict'
-require('dotenv').config();
 
 const utils = require('./utils')
 const webpack = require('webpack')
@@ -12,7 +11,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
-const HOST = process.env.HOST
+//const HOST = process.env.HOST
+const HOST = '0.0.0.0'
 const PORT = process.env.PORT && Number(process.env.PORT)
 
 const devWebpackConfig = merge(baseWebpackConfig, {
