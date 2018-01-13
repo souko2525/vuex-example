@@ -31,8 +31,14 @@ module.exports = {
       desiredCapabilities: {
         browserName: 'chrome',
         javascriptEnabled: true,
-        acceptSslCerts: true
-      }
+        acceptSslCerts: true,
+        'goog:chromeOptions': {
+          args: [
+		      'headless',
+			  'no-sandbox'
+          ],
+        },      
+	  }
     },
 
     firefox: {
