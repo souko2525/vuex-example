@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/souko2525/vuex-example.svg?branch=iss1)](https://travis-ci.org/souko2525/vuex-example)
+
 # vuex-example
 
 > A Vue.js project
