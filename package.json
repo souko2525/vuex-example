@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "unit": "jest --config test/unit/jest.conf.js --coverage && cat test/unit/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
@@ -37,6 +37,7 @@
     "chalk": "^2.0.1",
     "chromedriver": "^2.27.2",
     "copy-webpack-plugin": "^4.0.1",
+    "coveralls": "^3.0.0",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
     "eslint": "^3.19.0",
