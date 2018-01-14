@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/souko2525/vuex-example.svg?branch=iss1)](https://travis-ci.org/souko2525/vuex-example)
-
+[![Coverage Status](https://coveralls.io/repos/github/souko2525/vuex-example/badge.svg?branch=coveralls)](https://coveralls.io/github/souko2525/vuex-example?branch=coveralls)
 # vuex-example
 
 > A Vue.js project
