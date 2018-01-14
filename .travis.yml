@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "6"
-script: 'npm unit-conv'
+script: 'npm test-travis'
 dist: trusty
 sudo: false
 cache: yarn
