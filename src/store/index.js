@@ -11,5 +11,10 @@ export default new Vuex.Store({
     increment (state) {
       state.count++
     }
+  },
+  actions: {
+    increment ({ commit }) {
+      commit('increment')
+    }
   }
 })
