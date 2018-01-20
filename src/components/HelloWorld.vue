@@ -17,22 +17,29 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
+	<button v-on:click="add">{{button}}</button>
 	<counter></counter>
   </div>
 </template>
 
 <script>
 import Counter from './modules/Counter'
+import { mapActions } from 'vuex'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      button: '+1'
     }
   },
   components: {
     Counter
-  }
+  },
+  methods: mapActions({
+    add: 'increment'
+  })
 }
 </script>
 
