@@ -10,11 +10,22 @@ export default new Vuex.Store({
   mutations: {
     increment (state) {
       state.count++
+    },
+    decreasement (state) {
+      state.count--
+    }
+  },
+  getters: {
+    counter: state => {
+      return state.count
     }
   },
   actions: {
     increment ({ commit }) {
       commit('increment')
+    },
+    decreasement ({ commit }) {
+      commit('decreasement')
     }
   }
 })
