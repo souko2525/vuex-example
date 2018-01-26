@@ -1,7 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    {{getTodoById(2).id}}
+    <ul>
+        <li v-for="item in items.users">{{ item.age }}</li>
+    </ul>
   </div>
 </template>
 
@@ -17,11 +19,15 @@ export default {
   },
   components: {
   },
+  created: function () {
+    this.getItems()
+  },
   methods: mapActions({
+    getItems: 'getItems'
   }),
   computed: mapGetters({
-    count: 'counter',
-    getTodoById: 'getTodoById'
+    getTodoById: 'getTodoById',
+    items: 'items'
   })
 }
 </script>
