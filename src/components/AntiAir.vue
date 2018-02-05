@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="antiair">
     <h1>{{ msg }}</h1>
     <ul>
         <li v-for="item in items.users">{{ item.age }}</li>
